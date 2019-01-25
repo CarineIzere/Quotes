@@ -1,10 +1,11 @@
-import { Component } from "@angular/core";
-import { Quote } from "./quote";
+import { Component, OnInit } from "@angular/core";
+import { Quote } from "../quote";
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html"
+  selector: "app-quote",
+  templateUrl: "./quote.component.html",
+  styleUrls: ["./quote.component.css"]
 })
-export class AppComponent {
+export class QuoteComponent implements OnInit {
   quotes = [
     new Quote(
       1,
@@ -16,4 +17,7 @@ export class AppComponent {
     new Quote(5, "Solve math homework"),
     new Quote(6, "Plot my world domination plan")
   ];
+  constructor() {}
+
+  ngOnInit() {}
 }

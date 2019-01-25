@@ -14,9 +14,13 @@
     src="http://fifi.com.au/wp-content/uploads/2015/07/carine-quotes-mytheresa-660x400.jpg"
   />
 </div>
+h1>My Quotes </h1>
+<hr>
+
 <ul>
-  <li *ngFor="let quote of quotes">{{ quote }}</li>
+  <li *ngFor='let goal of quotes'>{{quote.name}}</li>
 </ul>
+<p *ngIf='quotes.length > 5'>You have too many quotes</p>
 <h2>Here are some links to help you start:</h2>
 <ul>
   <li>
@@ -43,3 +47,4 @@
 </ul>
 
 <router-outlet></router-outlet>
+<app-quote></app-quote>
