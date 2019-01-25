@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { GoalComponent } from './goal/goal.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { StrikethroughDirective } from './strikethrough.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     GoalComponent,
     QuoteComponent,
-    QuoteDetailsComponent
+    QuoteDetailsComponent,
+    StrikethroughDirective
   ],
   imports: [
     BrowserModule,
