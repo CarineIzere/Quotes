@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html"
 })
 export class AppComponent {
-  title = 'Quotes';
+  Quotes = "Watch Finding Nemo";
+  quotes: string[];
+  constructor() {
+    this.quotes = ["quotes and author", "lovely quotes ", "not loved quotes"];
+  }
 }
